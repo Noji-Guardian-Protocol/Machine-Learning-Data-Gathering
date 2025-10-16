@@ -23,9 +23,16 @@ NB: The procedure of collecting the logs of keyboards and mouse activity of a us
 ## Account Takeover & Insider Threat
 
 <details>
-  <summary>Click to expand list</summary>
+  <summary>Consent & Policy for Privacy Implications</summary>
 
-  - First item
-  - Second item
-  - Third item
+  - Notify the user that you will collecting their keystrokes and mouse activity for better interactions
+  - Notify them about the retention and scope of logging their events
+  - Give them a chance to opt-out from the process if there is need required
+</details>
+
+<details>
+  <summary>Data Computation & Implementation</summary>
+
+  - Ensure you don’t collect raw keystrokes, passwords, PIIs (Personal Identifiable information) instead collect the aggregate of featured computation within the endpoint (e.g. averages, variances) not raw event streams
+  - Compute these features on the endpoint and send anonymized scores to the ML systems.
 </details>
