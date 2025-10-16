@@ -27,7 +27,7 @@ NB: The procedure of collecting the logs of keyboards and mouse activity of a us
 
   - Notify the user that you will collecting their keystrokes and mouse activity for better interactions
   - Notify them about the retention and scope of logging their events
-- Give them a chance to opt-out from the process if there is need required
+  - Give them a chance to opt-out from the process if there is need required
 
 </details>
 
@@ -43,3 +43,23 @@ The agent which is the log/data collection components, will continuoulsy monitor
 user interact with the keyboard and mouse. This information will then further be processed to obtain the
 features
 
+<details>
+  <summary>Keyboard Event to Record</summary>
+
+  - Timestamp
+  - Key Press
+  - Key Release
+  - Key and Application in the forground
+
+</details>
+
+<details>
+  <summary>Mouse Event to Record</summary>
+
+  - **Mouse Movement Events:** Timestamp, pointer x coordinate, pointer y coordinate, application in foreground.
+
+  - **Mouse Click Events:** Timestamp, pointer x coordinate, pointer y coordinate, button (left/right/middle), press/release, application in foreground.
+
+  - **Mouse Scroll Events:** Timestamp, pointer x coordinate, pointer y coordinate, movement x coordinate, movement y coordinate, application in foreground.
+
+</details>
