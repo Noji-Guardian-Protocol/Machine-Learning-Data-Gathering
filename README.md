@@ -27,7 +27,8 @@ NB: The procedure of collecting the logs of keyboards and mouse activity of a us
 
   - Notify the user that you will collecting their keystrokes and mouse activity for better interactions
   - Notify them about the retention and scope of logging their events
-  - Give them a chance to opt-out from the process if there is need required
+- Give them a chance to opt-out from the process if there is need required
+
 </details>
 
 <details>
