@@ -36,3 +36,9 @@ NB: The procedure of collecting the logs of keyboards and mouse activity of a us
   - Ensure you don’t collect raw keystrokes, passwords, PIIs (Personal Identifiable information) instead collect the aggregate of featured computation within the endpoint (e.g. averages, variances) not raw event streams
   - Compute these features on the endpoint and send anonymized scores to the ML systems.
 </details>
+
+### Data Collection
+The agent which is the log/data collection components, will continuoulsy monitors the data generated when the
+user interact with the keyboard and mouse. This information will then further be processed to obtain the
+features
+
