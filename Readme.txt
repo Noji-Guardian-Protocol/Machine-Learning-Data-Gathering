@@ -11,7 +11,7 @@ list_chars = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m
 list_space = -, _, '.', ',', /, \&, +, <, space, tab, enter, (, ), =, |, \textbackslash, \#
 
 
-Te generated features are:
+The generated features are:
 
 
     - timestamp. This is the timestamp when the vector generated. It contains a numerical value corresponding to the milliseconds elapsed since the UNIX epoch, 1st January 1970.
@@ -24,7 +24,7 @@ Te generated features are:
 
     - press_press_average_interval. This is the average time elapsed between two consecutive keystrokes, measured in milliseconds.
 
-    - press_press_stddev_interval. This is the standard deviation on the time elapsed between two consecutive keystrokes, measured in milliseconds. 
+    - press_press_stddev_interval. This is the standard deviation on the time elapsed between two consecutive keystrokes, measured in milliseconds.
 
     - press_release_average_interval. This is the average time elapsed between the press and the release of all the keystrokes occurred during the time window, measured in milliseconds.
 
@@ -99,4 +99,3 @@ Te generated features are:
     - sent_bytes. Number of bytes sent using the network interfaces of the device during the time window.
 
     - USER. Label representing to which user the vector belongs. In this dataset, USER label is a number from 0 to 11.
-
