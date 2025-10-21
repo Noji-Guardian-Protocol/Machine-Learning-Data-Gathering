@@ -4,8 +4,9 @@ COMPUTER USER BEHAVIOUR DATASET. PC Features
 The monitored keys were:
 
 
-list_all_keys = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i,j, k, l, m, n, ñ, o, p, q, r, s, t, u, v, w, x, y, z, ´,`, ', ", ç, \^, º, @, \$, \%, \&, /, (, ), =, +, |, 'leftwindows', 'crtl', 'shift', 'capslock', 'tab', º, ª, \textbackslash, \#, 'esc', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'PrtSc', 'insert', 'delete',
-                'home', 'ind', 'pageup', 'pagedown', 'numlock', \}, \{, -, _, '.', ',', [, ], *, <, >, 'space', 'tab', 'inter', 'rightctrl', 'rightshift', 'backspace', 'atlgr', 'alt', 'left', 'right', 'up', 'down', 'rightarrow', 'leftarrow', 'uparrow', 'downarrow'
+list_all_keys = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i,j, k, l, m, n, ñ, o, p, q, r, s, t, u, v, w, x, y, z, ´,`, ', ", ç, \^, º, @, \$, \%, \&, /, (, ), =, +, |, 'leftwindows', 'crtl', 'shift', 'capslock', 'tab',
+                º, ª, \textbackslash, \#, 'esc', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'PrtSc', 'insert', 'delete','home', 'ind', 'pageup', 'pagedown', 'numlock', \}, \{, -, _, '.', ',', [, ],
+                *, <, >, 'space', 'tab', 'inter', 'rightctrl', 'rightshift', 'backspace', 'atlgr', 'alt', 'left', 'right', 'up', 'down', 'rightarrow', 'leftarrow', 'uparrow', 'downarrow'
 
 list_chars = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, ñ, o, p, q, r, s, t, u, v, w, x, y, z, ç
 
@@ -43,21 +44,26 @@ Te generated features are:
 
     - press_release_average_K. This set of features represent the average time elapsed between the press and the release of each key, measured in milliseconds. Again, there is a feature per character in list_all_keys.
 
-    -  digraph_counter_KK. This set of features counters the number of two keys combinations (digraph) introduced by the user. K is the list of all possible keys (list_all_keys), so there is a combination for each possible key pair. The features of the digraphs that were not entered during the window will have 0 value.
+    -  digraph_counter_KK. This set of features counters the number of two keys combinations (digraph) introduced by the user. K is the list of all possible keys (list_all_keys), so there is a combination for each possible key pair. The features of the digraphs
+       that were not entered during the window will have 0 value.
 
     -  digraph_average_time_KK. This set of features represents the average time elapsed to press each possible digraph, measured in milliseconds. Again, K is each possible character (list_all_keys), so there is a combination for each possible key pair.
 
-    -  click_speed_average_N. This set of features represents the average time elapsed to complete a click using the mouse (button press-release time). N represent each one of the mouse buttons, 0 is left button click, 1 is right button click, 2 is left button double click and 3 is middle button click. These features are measured in milliseconds.
+    -  click_speed_average_N. This set of features represents the average time elapsed to complete a click using the mouse (button press-release time). N represent each one of the mouse buttons, 0 is left button click, 1 is right button click, 2 is left button
+       double click and 3 is middle button click. These features are measured in milliseconds.
 
-    -  click_speed_stddev_N. This set of features represents the standard deviation of the time elapsed to complete a click using the mouse (button press-release time). N represent each one of the mouse buttons: 0 is left button single click, 1 is right button click, 2 is left button double click and 3 is middle button click. These features are measured in milliseconds.
+    -  click_speed_stddev_N. This set of features represents the standard deviation of the time elapsed to complete a click using the mouse (button press-release time). N represent each one of the mouse buttons: 0 is left button single click, 1 is right button
+       click, 2 is left button double click and 3 is middle button click. These features are measured in milliseconds.
 
-    -  mouse_action_counter_N. This set of features counters the number of events related to the mouse activity. N represent each possible action: 0, is left button single click, 1 is right button click, 2 is left button double click, 3 is scroll action, 4 is mouse pointer movement, 5 is drag or selection action (left press-movement-release), 6 is middle button click.
+    -  mouse_action_counter_N. This set of features counters the number of events related to the mouse activity. N represent each possible action: 0, is left button single click, 1 is right button click, 2 is left button double click, 3 is scroll action, 4 is
+       mouse pointer movement, 5 is drag or selection action (left press-movement-release), 6 is middle button click.
 
     -  mouse_position_histogram_N. This set of features counters the number of mouse events occurred in each quadrant of the screen. Screen is organized in 9 quadrants, dividing the screen size into 3 values in width and 3 in height 3. Then, N goes from 1 to 9.
 
     -  mouse_movement_direction_histogram_N. This set of features represents the number of mouse movement events in each direction, organized in 8 cardinal points based on the movement angle. N goes from 1 to 8.
 
-    -  mouse_movement_length_histogram_N. This set of features represents the length histogram of the mouse movements occurred during the time window. N has 3 possible values, 1: the movement length is less than a third of the screen size, 2: the movement length is between 1/3 and 2/3 of the screen size, 3: the movement length is larger than 2/3 of the screen size.
+    -  mouse_movement_length_histogram_N. This set of features represents the length histogram of the mouse movements occurred during the time window. N has 3 possible values, 1: the movement length is less than a third of the screen size, 2: the movement length
+       is between 1/3 and 2/3 of the screen size, 3: the movement length is larger than 2/3 of the screen size.
 
     -  mouse_average_movement_duration. This feature represents the average duration of the mouse movements, measured in milliseconds.
 
