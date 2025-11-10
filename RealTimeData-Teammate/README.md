@@ -1,12 +1,14 @@
 # Emeka's Real-Time Data Collection
 
-This directory contains real-time data collected from Emeka's Virtual Machine using the Noji Guardian Protocol Agent.
+This directory contains real-time data collected from All Teammate Machine using the Noji Guardian Protocol Agent.
 
 ## Overview
 
-The data collected here represents system metrics, performance indicators, and behavioral patterns observed during the operation of the Noji Agent on Emeka's VM environment.
+The data collected here represents system metrics, performance indicators, and behavioral patterns observed during the operation of the Noji Agent on the Teammate PC environment.
 
 ## Data Structure
+
+The following features can be found in the CSV file:
 
 - System metrics
 - Resource utilization
