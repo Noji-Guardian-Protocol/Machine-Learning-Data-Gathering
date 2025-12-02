@@ -33,7 +33,8 @@ NB: The procedure of collecting the logs of keyboards and mouse activity of a us
 </details>
 
 <details>
-  <summary>Data Computation & Implementation</summary>
+
+  <summary> Data Computation & Implementation </summary>
 
 - Ensure you don’t collect raw keystrokes, passwords, PIIs (Personal Identifiable information) instead collect the aggregate of featured computation within the endpoint (e.g. averages, variances) not raw event streams
 - Compute these features on the endpoint and send anonymized scores to the ML systems.
@@ -47,17 +48,20 @@ user interact with the keyboard and mouse. This information will then further be
 features
 
 <details>
-  <summary>Keyboard Event to Record</summary>
+
+  <summary> Keyboard Event to Record </summary>
 
 - Timestamp
 - Key Press
 - Key Release
 - Key and Application in the forground
 
+
 </details>
 
 <details>
-  <summary>Mouse Event to Record</summary>
+
+  <summary> Mouse Event to Record </summary>
 
 - **Mouse Movement Events:** Timestamp, pointer x coordinate, pointer y coordinate, application in foreground.
 
@@ -73,7 +77,8 @@ which will produce a value that will be used by the machine learning
 #### Keyboard
 
 <details>
-  <summary>Features for Keyboard</summary>
+
+  <summary> Features for Keyboard </summary>
 
     - timestamp: Timestamp that indicates when the vector was generated. It contains
     a numerical value corresponding to the milliseconds elapsed since the UNIX epoch,
@@ -134,7 +139,8 @@ which will produce a value that will be used by the machine learning
 #### Mouse
 
 <details>
-  <summary>Features for Mouse</summary>
+
+  <summary> Features for Mouse </summary>
 
     - click_speed_aveage_N: Set of features that represents the average time elapsed to complete a click using
     the mouse (button press-release time). N represents each one of the mouse buttons, 0 is left button click,
